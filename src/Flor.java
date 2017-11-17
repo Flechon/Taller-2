@@ -2,6 +2,13 @@
 public class Flor extends Semilla{
 	String color;
 	
+	public Flor(int cod,String nom,int pre,String col) {
+		this.codigo = cod;
+		this.nombre = nom;
+		this.precio = pre;
+		this.color = col;
+	}
+	
 	@Override
 	public double calcularPrecioOferta() {
 		double precioOferta = precio*(1-DESC_FLOR);
