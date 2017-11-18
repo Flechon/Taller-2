@@ -11,10 +11,10 @@ public class Arbol extends Semilla{
 		
 	@Override
 	public double calcularPrecioOferta() {
-		double precioOferta = 0;
-		if (alturaMaxima<180) {
-			precioOferta = precio*(1-DESC_ARBOL);
+		double oferta = this.precio*(1-DESC_ARBOL);
+		if (this.alturaMaxima>180) {
+			precioOferta = oferta;
 		}
-		return precioOferta;
+		return oferta;
 	}
 }

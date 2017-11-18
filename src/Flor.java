@@ -11,11 +11,14 @@ public class Flor extends Semilla{
 	
 	@Override
 	public double calcularPrecioOferta() {
-		double precioOferta = precio*(1-DESC_FLOR);
+		double oferta = this.precio*(1-DESC_FLOR);
 		if ("rojo".equalsIgnoreCase(color)) {
-			precioOferta = precio;
+			precioOferta = 0;
 		}
-		return precioOferta;
+		else {
+			precioOferta = oferta;
+		}
+		return oferta;
 		
 	}
 }
